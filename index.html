@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<title>HIGHTEND-PERFUME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar"> <!--เป็นการกำหนดขนาดของการสร้างกล่องหรือตารางslidebarของหน้าMenu-->
+  <div class="w3-container w3-display-container w3-padding-16"> <!--เป็นการเรียกการแสดงผลของการจัดวางรูปแบบ-->
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>  <!--ซ่อนขนาดความใหญ่เกินไปและ แสดงปุ่ม-->
+    <h3  class="w3-wide"><b>Hight </b></h3> <!--รูปแบบFontตัวอักษร-->
+    <h15 class="w3-wide"><b>&nbsp;&nbsp;END</b></h15> <!--รูปแบบFontตัวอักษร-->
+    <h3 class="w3-wide"><b>Perfume</b></h3> <!--รูปแบบFontตัวอักษร-->
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold"> <!--กำหนดความใหญ่ของแถบเทาและตัวอักษรสีเทา-->
+    <a href="index.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Home</a> <!--สร้างปุ่ม สีเทาและมีลูกศร-->
+    <a href="CHANEL.html" class="w3-bar-item w3-button">CHANEL</a> <!--สร้างปุ่ม-->
+    <a href="GUCCI.html" class="w3-bar-item w3-button">GUCCI</a> <!--สร้างปุ่ม-->
+    <a href="GRACE.html" class="w3-bar-item w3-button">GRACE</a> <!--สร้างปุ่ม-->
+    <a href="LANCOME.html" class="w3-bar-item w3-button">LANCOME</a> <!--สร้างปุ่ม-->
+    <a href="DIOR.html" class="w3-bar-item w3-button">DIOR</a> <!--สร้างปุ่ม-->
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> <!--สร้างปุ่ม-->
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> <!--สร้างปุ่ม-->
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a> <!--สร้างปุ่ม-->
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge"> <!--สร้างปุ่ม ซ่อนขนาดไหน สีดำ-->
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div> <!--สร้างปุ่ม-->
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a> <!--สร้างปุ่ม ไปทางขวา-->
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> <!--การตั้งค่า Effect การซ่อนต่างๆ-->
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px"> <!--กำหนดขนาดของ marginไปทางซ้าย 250pixel-->
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div> <!--กำหนดขนาดของ marginไปทางบน 83pixel-->
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge"> 
+    <p class="w3-left">News Perfume</p>
+    <p class="w3-right">
+      <a href="CART.html"><i class="fa fa-shopping-cart w3-margin-right" ></i></a> <!--แสดงไอคอนรถเข็น-->
+      <i class="fa fa-search"></i><!--แสดงไอคอนแว่นขยาย-->
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/3583c9eb59fd7c324f1a431bb4cbf209.th.png"    alt="Jeans" style="width:100%">  
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px"> <!--ทำให้แสดงมุมบนซ้าย ข้อความสีขาว-->
+      <h1 style="color:black" class="w3-jumbo w3-hide-small">New arrivals</h1> 
+      <h1 style="color:black" class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 style="color:black" class="w3-hide-small">COLLECTION 2020</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+  <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 500%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #000000;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #050202;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="slideshow-container"> <!--แสดงเทมเพรตสไลด์-->
+    
+    <div class="mySlides fade"> <!--แสดงสไลด์ที่กำหนด-->
+      <div class="numbertext">1 / 3</div> <!--แสดงตัวเลขกำกับสไลด์-->
+      <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/68986f3b63b5a1b40273fbf5dc9c6647.th.png" style="width:100%">  
+      <div class="text">GUCCI PARFUME</div> <!--แสดงข้อความ-->
+    </div>
+    
+    <div class="mySlides fade"> <!--แสดงสไลด์ที่กำหนด-->
+      <div class="numbertext">2 / 3</div> <!--แสดงตัวเลขกำกับสไลด์-->
+      <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/acadce9f6237618dd8ed4522e8d029bb.th.jpg" style="width:100%"> 
+      <div class="text">CHANEL PARFUME</div> <!--แสดงข้อความ-->
+    </div>
+    
+    <div class="mySlides fade"> <!--แสดงสไลด์ที่กำหนด-->
+      <div class="numbertext">3 / 3</div> <!--แสดงตัวเลขกำกับสไลด์-->
+      <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/b564fa8710fdf375afc67a344752ee12.th.jpg" style="width:100%"> 
+      <div class="text">GUCCI PARFUME</div> <!--แสดงข้อความ-->
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--สร้างปุ่มกดกลับ-->
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> <!--สร้างปุ่มถัดไป-->
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center"> 
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+  <div class="w3-container w3-text-grey" id="jeans"> <!--เป็นการกำหนดและสร้างตัวอักษรสีเทา-->
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">  <!--สร้างgscalelสีเทา-->
+    <div class="w3-col l3 s6"> 
+      <div class="w3-container"> <!--ตัวแปลเรียกใช้ class-->
+          <div class="w3-display-container"> <!--เป็นการแสดงตัวแปล class-->
+        <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/d3e380b100e28a510c8c89c25daeee65.th.jpg" style="width:100%">
+        <span class="w3-tag w3-display-topleft">New</span> <!--แสดงข้อความบนขวา-->
+        <div class="w3-display-middle w3-display-hover"> <!--แสดงตรงกลางของhover-->
+          <a href="CART.html"><button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+        </div>
+        </div>
+        <p>COCO MADEMOISELLE<br><b>$24.99</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/2a0c095c7ee25e997e48426106774086.th.jpg" style="width:100%"> 
+        <span class="w3-tag w3-display-topleft">New</span>
+        <div class="w3-display-middle w3-display-hover">
+          <a href="CART.html"><button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+        </div>
+        </div>
+        <p>CHANCE EAU TENDRE<br><b>$19.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/434690ec93384fda44d3d726dce2a3c7.th.jpg"  style="width:100%"> 
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <a href="CART.html"><button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+        </div>
+        <p>ALLURE HOMME SPORT<br><b>$19.99</b></p>
+      </div>
+      <div class="w3-container">
+          <div class="w3-display-container">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/d70addbe88ec2b1e52d1cb89139e71aa.th.jpg"  style="width:100%"> 
+        <span class="w3-tag w3-display-topleft">New</span>
+        <div class="w3-display-middle w3-display-hover">
+          <a href="CART.html"><button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+        </div>
+        </div>
+        <p>BLEU DE CHANEL<br><b>$20.50</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+          <div class="w3-display-container">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/076fe40ffc3adba34c86765dcc81617a.th.jpg"  style="width:100%"> 
+        <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <a href="CART.html"><button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+        </div>
+        <p>Gucci Flora Gorgeous Gardenia<br><b>$20.50</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/8366d3d4c524eacfc71d393480daeb2e.th.jpg"  style="width:100%"> 
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <a href="CART.html"><button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+        </div>
+        <p>Flora Eau De Parfum<br><b class="w3-text-red">$18.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+          <div class="w3-display-container">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/214923de9cee2a5961c924d3cf55fa76.th.jpg" style="width:100%"> 
+        <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <a href="CART.html"><button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+        </div>
+        <p>Amazing Grace Spray Fragrance<br><b>$17.99</b></p>
+      </div>
+      <div class="w3-container">
+          <div class="w3-display-container">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/b0af0296fa243646710fe2215dde868b.th.jpg"  style="width:100%"> 
+        <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <a href="CART.html"><button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+        </div>
+        <p>Lancome Miracle<br><b>$24.99</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32"> <!--ใช้รูปแบบเทมเพรต เป็นสีดำและทำการ padding-->
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p> <!--เป็นการทำให้กรอกข้อความตรงกลาง-->
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button> <!--เป็นรูปแบบของปุ่ม-->
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer"> <!--ทำให้ตัวอักษรเล็กและเทาสว่างตัวเล็กและตรงกลาง-->
+    <div class="w3-row-padding"> 
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p> <!--เป็นการให้เติมคำในช่อง-->
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p> <!--เป็นการให้เติมคำในช่อง-->
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p> <!--เป็นการให้เติมคำในช่อง-->
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p> <!--เป็นการให้เติมคำในช่อง-->
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4"> <!--เป็นรูปแบบของสี-->
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify"> 
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p> <!--ออกแบบตัวอักษร-->
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p> <!--ออกแบบตัวอักษร-->
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p> <!--ออกแบบตัวอักษร-->
+        <h4>We accept</h4> 
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p> <!--ออกแบบตัวอักษร-->
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p> <!--ออกแบบตัวอักษร-->
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i> <!--เป็นไอคอน-->
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i> <!--เป็นไอคอน-->
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i> <!--เป็นไอคอน-->
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i> <!--เป็นไอคอน-->
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i> <!--เป็นไอคอน--> 
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i><!--เป็นไอคอน-->
+      </div>
+    </div>
+  </footer>
+
+
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px"> <!--เป็นการzoomและรูปแบบของ model-->
+    <div class="w3-container w3-white w3-center"> <!--เป็นการเรียกตัวแปร-->
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i> 
+      <h2 class="w3-wide">NEWSLETTER</h2> <!--เป็นการแสดงข้อความ-->
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p> <!--กำหนดรูปแบบของข้อความให้เติมลงไปในช่อง-->
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button> <!--กำหนดรูปแบบของข้อความให้เติมลงไปในช่อง-->
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

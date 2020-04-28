@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="detail.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1000px 1000px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.round {
+  border-radius: 1000%;
+}
+
+
+
+  
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style inputs */
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    /* Style the container/contact section */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+    
+    /* Create two columns that float next to eachother */
+    .column {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+
+</style>
+<title>ตะกร้าสินค้า</title>
+
+</head>
+<body class="w3-content" style="max-width:1500px"> <!--เป็นการกำหนดตัวแปลของ body-->
+
+
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar"> <!--สร้างแถบบล็อกขึ้นมาสีขาว-->
+        <div class="w3-container w3-display-container w3-padding-16"> <!--เรียกใช้เทมเพรตที่กำหนดไว้-->
+          <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i> <!--ซ่อนขนาดใหญ่และปุ่มมาแสดง-->
+          <h3  class="w3-wide"><b>Hight </b></h3> <!--แสดงข้อความ-->
+          <h15 class="w3-wide"><b>&nbsp;&nbsp;END</b></h15> <!--แสดงข้อความ-->
+          <h3 class="w3-wide"><b>Perfume</b></h3> <!--แสดงข้อความ-->
+        </div>
+        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold"> <!--ปรับขนาดและตัวอักษรสีเทา-->
+          <a href="index.html" class="w3-bar-item w3-button">Home</a> <!--สร้างปุ่มที่กด-->
+          <a href="CHANEL.html" class="w3-bar-item w3-button">CHANEL</a> <!--สร้างปุ่มที่กด-->
+          <a href="GUCCI.html" class="w3-bar-item w3-button">GUCCI</a> <!--สร้างปุ่มที่กด-->
+          <a href="GRACE.html" class="w3-bar-item w3-button">GRACE</a> <!--สร้างปุ่มที่กด-->
+          <a href="LANCOME.html" class="w3-bar-item w3-button">LANCOME</a> <!--สร้างปุ่มที่กด-->
+          <a href="DIOR.html" class="w3-bar-item w3-button">DIOR</a> <!--สร้างปุ่มที่กด-->
+        </div>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+        <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+      </nav>
+      
+<a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+
+</nav>
+
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">เลือกสินค้าที่ต้องการ</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+</div>
+
+
+<title>ตะกร้าสินค้า</title>
+<meta name="description" content="This is the description">
+<link rel="stylesheet" href="styles.css" />
+<script src="store.js" async></script>
+</head>
+<body>
+
+       
+
+
+<section class="container content-section">
+<div class="w3-container">  
+<div class="shop-items">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="nature">
+        <div class="shop-item">
+            <span class="shop-item-title">COCO MADEMOISELLE</span>
+            <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/d3e380b100e28a510c8c89c25daeee65.th.jpg" >
+            <div class="shop-item-details">
+                <span class="shop-item-price">24.99฿</span>
+                <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+            </div>
+        </div>
+        </div>
+        
+
+        <div class="shop-item">
+            <span class="shop-item-title">CHANCE EAU TENDRE</span>
+            <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/2a0c095c7ee25e997e48426106774086.th.jpg" >
+            <div class="shop-item-details">
+                <span class="shop-item-price">19.99฿</span>
+                <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+            </div>
+        </div>
+
+        <div class="shop-item">
+            <span class="shop-item-title">Allure Eau De Toilette</span>
+            <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/9b0c310767cf6c215b6b6bb026302ce7.th.jpg" >
+            <div class="shop-item-details">
+                <span class="shop-item-price">20.50฿</span>
+                <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+            </div>
+        </div>
+        
+
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="nature">
+        <div class="shop-item">
+            <span class="shop-item-title">BLEU DE CHANEL</span>
+            <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/d70addbe88ec2b1e52d1cb89139e71aa.th.jpg" >
+            <div class="shop-item-details">
+                <span class="shop-item-price">20.50฿</span>
+                <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+            </div>
+        </div>
+        </div>
+         
+        <div class="nature">
+        <div class="shop-item">
+            <span class="shop-item-title">Chance Eau Tendre Eau De Parfum</span>
+            <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/5a595835d4682883343ac4ca7b01b40f.th.jpg" >
+            <div class="shop-item-details">
+                <span class="shop-item-price">18.99฿</span>
+                <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+            </div>
+        </div>
+    </div>
+    <div class="nature">
+        <div class="shop-item">
+            <span class="shop-item-title">Coco Mademoiselle Eau De Parfum</span>
+            <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/28c5dd23d63a3d86a7f18ab272c9aa73.th.jpg" >
+            <div class="shop-item-details">
+                <span class="shop-item-price">17.99฿</span>
+                <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="nature">
+        <div class="shop-item">
+            <span class="shop-item-title">Gabrielle Eau de Parfum Spray</span>
+            <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/e8b6dde2c46c015abb993453493dc1ef.th.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">24.99฿</span>
+                <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="nature">
+        <div class="shop-item">
+            <span class="shop-item-title">Bloom Eau de Parfum</span>
+            <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/b564fa8710fdf375afc67a344752ee12.th.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">25.99฿</span>
+                <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+            </div>
+        </div>
+    </div>
+        
+    <div class="nature">
+      <div class="shop-item">
+          <span class="shop-item-title">Flora Gorgeous Gardenia de Toilette</span>
+          <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/4f93833414ca3275e08321c541c583d6.th.jpg">
+          <div class="shop-item-details">
+              <span class="shop-item-price">20.50฿</span>
+              <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+          </div>
+      </div>
+  </div>
+
+  <div class="nature">
+    <div class="shop-item">
+        <span class="shop-item-title">Amazing Grace Fragrance EDT</span>
+        <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/d57b05a0ff75950b49853c8793272033.th.jpg">
+        <div class="shop-item-details">
+            <span class="shop-item-price">20.99฿</span>
+            <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+        </div>
+    </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Giffarine Grace Cologne Spray</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/e5b082074dbcf914386e82a1444b97db.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">18.99฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Grace Ballet Rose Spray Fragrance</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/a384ba366efd640c3f512851b0f9de1b.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">24.99฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Lancome Hypnose Eau De Parfum</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/033300f96c060c4cda1513241dd8979c.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">25.99฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Lancome La Vie Est Belle EDP(L'eau De Parfum)</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/4f475b2ac7b70a79dad42ad213a4d460.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">29.99฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Lancome Miracle Blossom EDP</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/30784575820b0f059358c989c2438ca1.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">28.99฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Lancome Poeme EDP</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/6d7b95d4c26678095e6690e1071e754d.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">25.50฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Addict Eau Fraiche</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/4ff31124c47ca5c52412a34a38bcf363.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">28.99฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Christian DIor Poison EDP</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/16a48b245e947cca36bb3522dab8e2b4.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">28.99฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+<div class="nature">
+  <div class="shop-item">
+      <span class="shop-item-title">Dior J'adore EDP for Women</span>
+      <img class="shop-item-image" src="https://s3-ap-southeast-1.amazonaws.com/img-in-th/19701be5a667f84a8d7c0340c60450ed.th.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">25.50฿</span>
+          <button class="btn btn-primary shop-item-button" type="button">ใส่ตะกร้า</button>
+      </div>
+  </div>
+</div>
+
+        <p>
+            <button onclick="myShow.previous()" class="previous round"><<</button>
+            <button onclick="myShow.next()" class="next round">>></button>
+        </p>  
+</div>
+</div>
+
+</section>
+
+
+
+<section class="container content-section">
+    <h2 class="section-header">ตะกร้าสินค้า</h2>
+    <div class="cart-row">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="cart-item cart-header cart-column">สินค้า</span>
+        
+        <span class="cart-price cart-header cart-column">ราคา</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="cart-quantity cart-header cart-column">จำนวน</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <br><br>
+        <strong class="cart-total-title">ราคาทั่งหมด</strong>
+        <span class="cart-total-price">0฿</span>
+    </div>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+    <div class="container">
+        <div style="text-align:center">
+          <h2>ที่อยู่จัดส่ง</h2>
+  
+        </div>
+        <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <div class="column">
+            <form>
+              <label for="fname">ชื่อ</label>
+              <input type="text" id="fname" name="firstname" placeholder="ชื่อของคุณ...">
+              <label for="lname">นามสกุล</label>
+              <input type="text" id="lname" name="lastname" placeholder="นามสกุลของคุณ...">
+              <label for="subject">ที่อยู่</label>
+              <textarea id="subject" name="subject" placeholder="ที่อยู่" style="height:170px"></textarea>
+              <label for="img">โอนเงิน PromptPay:086-XXX-XXXX <br>ใส่รูปสลิปโอนเงินข้างล่าง</label>
+                <input type="file" id="img" name="img" accept="image/*">
+              </form>
+          </div>
+        </div>
+      </div>
+  
+
+
+    <button class="btn btn-primary btn-purchase" type="button">ชำระเงิน</button>
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+
+myShow = w3.slideshow(".nature", -100);
+
+
+  // Accordion 
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+  
+  
+  
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+</body>
+</html>
